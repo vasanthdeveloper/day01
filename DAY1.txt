@@ -1,0 +1,45 @@
+1. Difference between http1.1 vs http2?
+ANSWER:
+HTTP stands for HyperText Transfer Protocol.
+HTTP/1.1 and HTTP/2.0 are two versions of the HTTP (Hypertext Transfer Protocol) protocol used for communication between web browsers and servers.
+Here are some of the key differences between the two versions:
+HTTP1.1:
+* It was introduced in 1997.
+* In HTTP/1.1, each request and response required its own TCP connection.
+* HTTP/1.1 uses a text-based protocol, which means that the headers and data are sent in a human-readable format.
+* In HTTP/1.1, the headers for each request and response can be quite long, which can slow down performance.
+
+HTTP2:
+* It was introduced in 2015.
+* HTTP/2.0, multiple requests and responses can be sent over a single connection, which reduces the number of connections needed and improves performance.
+* HTTP/2.0 uses a binary protocol, which is more efficient and allows for better compression and faster processing.
+* Another major addition to HTTP/2.0 is server push. With server push, the server can send resources to the client before the client even requests them. 
+  This reduces the number of round trips required to load a page and can improve performance.
+* In HTTP/2.0, header compression is used to reduce the size of headers, which speeds up performance.
+Overall, HTTP/2.0 is a significant improvement over HTTP/1.1, offering faster and more efficient communication between web browsers and servers.
+However, it's worth noting that not all servers and browsers support HTTP/2.0, and some older systems may only support HTTP/1.1.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Write a blog about objects and its internal representation in javascript
+ANSWER:
+In the world of programming, objects are a fundamental concept that is used extensively in various programming languages. 
+In Javascript, objects are an essential data structure, and their internal representation is critical to understanding how they work.
+
+An object in Javascript is a collection of key-value pairs. 
+The keys are strings, and the values can be any data type, including other objects. 
+The object's internal representation is based on the concept of a property descriptor, which defines how the object's properties behave.
+
+Creation of object:
+let input='name';
+let person{
+name="shankar",
+age=22,
+city="chennai",
+number=987654332
+siblings: {
+relative:brother,
+work: student
+}
+}
+console.log(person.age)//22
+console.log(person[input])
